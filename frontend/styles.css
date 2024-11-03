@@ -1,0 +1,52 @@
+/* styles.css */
+
+body {
+
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.taskbar{
+    height: 10vh;
+    width: 100vw;
+    background-color: #211f1f;
+    align-content: center;
+    color: #f0f0f0;
+    
+}
+
+.piece{
+    width: 10.8vmin;
+    height: 10.8vmin;
+    margin-right: 1vmin;
+}
+
+span.taskbar-word{
+    display: block; 
+    margin-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Use fractional units for responsive sizing */
+    grid-template-rows: repeat(8, 1fr);
+    width: 90vmin; /* Use viewport minimum size to ensure the board scales with window size */
+    height: 90vmin;/* Same here */
+    align-content: center;
+    justify-content: center;
+}
+
+.square {
+    width: 100%; /* Take full width of the grid cell */
+    height: 100%; /* Take full height of the grid cell */
+   
+}
+
+.square.black {
+    background-color: #333; /* Black squares */
+}
+
+.square.white {
+    background-color: #fff; /* White squares */
+}
